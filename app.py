@@ -42,7 +42,7 @@ if image is not None:
     st.image(image, caption="Uploaded/Captured Image", use_column_width=True)
 
     # Ask a question about the image
-    question = st.text_input("Ask a question about the image:", "What is the color of the shirt?")
+    question = st.text_input("Ask a question about the image:", "please enter your question")
 
     # Process the image and generate an answer
     if st.button("Get Answer"):
