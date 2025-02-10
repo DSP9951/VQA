@@ -9,7 +9,7 @@ st.markdown(
     <style>
     /* Set an image as the background */
     .stApp {
-        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLKETmZf9FLU0DmU6l3bQW4UsKXkk92nPWng&s");
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTknz0FwkCEINZpnCfqRlZ8V8miXuLyP7F17w&s");
         background-size: cover;  /* Cover the entire app */
         background-position: center;  /* Center the image */
         background-repeat: no-repeat;  /* Prevent repeating */
