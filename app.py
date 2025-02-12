@@ -183,7 +183,7 @@ if image is not None:
 def handle_click():
     st.session_state.clicked = True
 
-st.button("Click", on_click=handle_click)
+
 
 if "clicked" in st.session_state and st.session_state.clicked:
     st.write("Hello")
