@@ -178,9 +178,17 @@ if image is not None:
 
                 # Add bot answer to chat history
                 st.session_state.chat_history.append({"role": "bot", "content": answer})
-            print(f"Condition value: {your_condition}")
-            if your_condition:
-               st.experimental_rerun()
+                import streamlit as st
+
+def handle_click():
+    st.session_state.clicked = True
+
+st.button("Click", on_click=handle_click)
+
+if "clicked" in st.session_state and st.session_state.clicked:
+    st.write("Hello")
+    del st.session_state.clicked  # Clean up the state
+            
             # Rerun the app to update the chat history display
             #st.experimental_rerun()
 else:
