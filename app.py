@@ -178,9 +178,11 @@ if image is not None:
 
                 # Add bot answer to chat history
                 st.session_state.chat_history.append({"role": "bot", "content": answer})
-
+            print(f"Condition value: {your_condition}")
+            if your_condition:
+               st.experimental_rerun()
             # Rerun the app to update the chat history display
-            st.experimental_rerun()
+            #st.experimental_rerun()
 else:
     st.warning("Please upload an image or capture one from the camera.")
 
